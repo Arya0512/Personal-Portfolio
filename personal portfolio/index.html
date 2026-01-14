@@ -337,7 +337,7 @@
 
     <!-- Contact Info -->
     <div class="contact-info">
-      <a href="aryawaskar1@gmail.com">
+     <a href="mailto:aryawaskar1@gmail.com">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
         <span>Email</span>
       </a>
@@ -354,12 +354,13 @@
     </div>
 
     <!-- Contact Form -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+<form id="contact-form" class="contact-form" action="mailto:aryawaskar1@gmail.com" method="post" enctype="text/plain">
+  <input type="text" name="from_name" placeholder="Your Name" required>
+  <input type="email" name="reply_to" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
 
   </div>
 </section>
@@ -368,9 +369,9 @@
   <p>© 2026 Arya | Made with 💜</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>

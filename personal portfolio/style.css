@@ -599,42 +599,4 @@ body {
   font-size: 0.9rem;
 }
 
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #7f5af0;
-  border-radius: 5px;
-}
-
-/* Mobile Menu */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(127, 90, 240, 0.25);
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
 
